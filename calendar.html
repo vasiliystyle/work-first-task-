@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<link rel="stylesheet" href="styles/calendar.css" type="text/css" />
+  <meta charset="utf-8">
+</head>
+
+<body onload="createCalendar2(0)">
+	<center>
+	<h1 id="month"></h1>
+	<div id="calendar2">
+		<input type="button" class="floated" id="back"  value="Предыдущий месяц" onclick="">
+		<input type="button" class="floated" id="next" value="Следующий месяц" onclick="">
+		<br>
+		<br>
+		<table id="tableI">
+		<tr>
+			<th>ПН</th>
+			<th>ВТ</th>
+			<th>CР</th>
+			<th>ЧТ</th>
+			<th>ПТ</th>
+			<th>СБ</th>
+			<th>ВС</th>
+		</tr>
+		<tr>
+			<td class="kek" ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>	
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>			
+		</tr>
+		<tr>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>	
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>			
+		</tr>
+		<tr>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>	
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>			
+		</tr>
+		<tr>
+			<td ondblclick="selectCell(this.id)"></td>	
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>			
+		</tr>
+		<tr>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>	
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>
+			<td ondblclick="selectCell(this.id)"></td>			
+		</tr>
+		<tr>
+			<td ondblclick="selectCell(this.id)" hidden="true"></td>
+			<td ondblclick="selectCell(this.id)" hidden="true"></td>
+		</tr>
+		</table>
+	
+	</div>	
+
+	<div id="dayz" hidden="true">
+		<table id="tableII">
+		<tr>
+		Время приёма
+		</tr>
+		<tr>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>			
+		</tr>
+		<tr>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>			
+		</tr>
+		<tr>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>			
+		</tr>
+		<tr>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>	
+			<td class="hours" ondblclick="selectCell(this.id)"></td>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>
+			<td class="hours" ondblclick="selectCell(this.id)"></td>	
+		</tr>
+
+		</table>
+		<button onclick="goBack()">Вернуться назад</button>
+		</div> 
+
+
+
+
+	</center>
+<script src="scripts/jquery-3.3.1.min.js"></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/query.js"></script>
+
+
+</body>
+
+</html>
